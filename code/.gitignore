@@ -15,5 +15,5 @@ composer.lock
 /src/view/www/node_modules/*
 
 # Dinamic folder
-/system/writable/*
+#/system/writable/*
 /system/temp_folder/*
