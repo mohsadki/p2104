@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('docker-compose down : Stop and remove containers, networks, images, and volumes') {
+            steps {
+                sh 'docker-compose down'
+            }
+        }
+        stage('get codes from Github') {
+            steps {
+                git 'https://github.com/mohsadki/p2111.git'
+            }
+        }    
+        stage('docker-compose build: Create and start containers') {
+            steps {
+                sh "docker-compose build"
+            }
+        }
+        stage('docker-compose up: start containers') {
+            steps {
+                sh "docker-compose up -d"
+            }
+        }
+    }
+}
