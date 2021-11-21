@@ -11,7 +11,7 @@
 composer.lock
 
 # Libraries
-#/system/composer/vendor/*
+/system/composer/vendor/*
 /src/view/www/node_modules/*
 
 # Dinamic folder
