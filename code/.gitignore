@@ -6,8 +6,8 @@
 /src/view/www/.cache/*
 
 # Config
-config.php
-php.ini
+#config.php
+#php.ini
 composer.lock
 
 # Libraries
